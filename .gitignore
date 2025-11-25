@@ -27,3 +27,6 @@ package-lock.json
 .netlify/
 
 bun.lock
+.edgeone/
+.vscode/
+package-lock.json
