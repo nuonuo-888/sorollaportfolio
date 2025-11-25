@@ -5,6 +5,16 @@ Welcome to my personal portfolio demo repository! This project is a demonstratio
 - You can view the deployed project at the following URL: [https://sorolla.netlify.app/](https://sorolla.netlify.app/)
 - Astro web templates: https://astro.build/themes/details/sorollaportfolio/
 
+## Deploy
+
+One-click deploy this starter to Tencent EdgeOne Pages (installs, builds, and serves `dist/` automatically).
+
+[![Deploy to Tencent EdgeOne Pages](https://img.shields.io/badge/Deploy-Tencent%20EdgeOne%20Pages-006EFF?style=for-the-badge&logo=tencentqq&logoColor=white)](https://edgeone.ai/pages/new?template=https%3A%2F%2Fgithub.com%2Fnuonuo-888%2Fsorollaportfolio&output-directory=dist&build-command=npm+run+build&install-command=npm+install&origin_from=childtom)
+
+## Preview
+
+[![Preview](https://img.shields.io/badge/Preview-4ECCA3?style=for-the-badge&logo=globe&logoColor=white)](https://sorollaportfolio.edgeone.app/)
+
 ## 📂 Project Structure
 
 - **public/**: Contains public assets like images and fonts.
@@ -14,7 +24,6 @@ Welcome to my personal portfolio demo repository! This project is a demonstratio
 - **package.json**: Lists project dependencies and scripts.
 - **tailwind.config.mjs**: Configuration file for Tailwind CSS.
 - **tsconfig.json**: TypeScript configuration file.
-
 
 ### 🧭 /src structure
 
@@ -82,7 +91,6 @@ src
   - `hamburgers.css`: Styles for the hamburger menu.
 
 This structure helps in organizing the project files and makes it easier to maintain and scale the project.
-
 
 ## 🚀 Getting Started
 
