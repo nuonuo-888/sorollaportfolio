@@ -2,9 +2,6 @@
 
 Welcome to my personal portfolio demo repository! This project is a demonstration of what a personal portfolio could look like. It showcases various aspects of web development, including my work, skills, and projects.
 
-- You can view the deployed project at the following URL: [https://sorolla.netlify.app/](https://sorolla.netlify.app/)
-- Astro web templates: https://astro.build/themes/details/sorollaportfolio/
-
 ## Deploy
 
 One-click deploy this starter to Tencent EdgeOne Pages (installs, builds, and serves `dist/` automatically).

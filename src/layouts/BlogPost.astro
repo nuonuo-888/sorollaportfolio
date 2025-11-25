@@ -28,10 +28,20 @@ const bgClasses = [
   "hover:shadow-pyellow",
 
 ];
-import type { ImageMetadata } from 'astro';
-import { Image } from 'astro:assets';
-const images = import.meta.glob<{ default: ImageMetadata }>('/src/assets/*.{webp,jpeg,jpg,png,gif}')
-if (!images[heroImage]) throw new Error(`"${heroImage}" does not exist in glob: "src/assets/*.{webp,jpeg,jpg,png,gif}"`);
+import heroImageAsset from "@/assets/hero.webp";
+import franImage from "@/assets/fran.webp";
+import adrianaImage from "@/assets/adriana.webp";
+import euroImage from "@/assets/euro.webp";
+
+const imageMap: Record<string, typeof heroImageAsset> = {
+  "/src/assets/hero.webp": heroImageAsset,
+  "/src/assets/fran.webp": franImage,
+  "/src/assets/adriana.webp": adrianaImage,
+  "/src/assets/euro.webp": euroImage,
+  "/fran.webp": franImage,
+};
+
+const selectedImage = imageMap[heroImage] || franImage;
 
 const getRandomClass = () => {
   return bgClasses[Math.floor(Math.random() * bgClasses.length)];
@@ -56,7 +66,7 @@ const getRandomClass = () => {
             </h1>
             <p  set:html={description} />
           </div>
-          <Image src={images[heroImage]()}  alt={title} class="h-96 w-full object-cover"/>
+          <img src={selectedImage.src} alt={title} class="h-96 w-full object-cover"/>
         </div>
         <div class="text-black px-6 md:px-0">
           <div class="">
@@ -99,7 +109,7 @@ const getRandomClass = () => {
               <p>Written by</p>
               <div class="flex -mt-4 gap-2">
                   <div class="bg-pgreen rounded-full w-12 h-12 aspect-square object-contain overflow-hidden ">
-                    <Image src={images["/src/assets/hero.webp"]()} alt="Fran" />
+                    <img src={heroImageAsset.src} alt="Fran" />
                   </div>
                   <div>
                   <h3>Joaquín Sorolla</h3>
