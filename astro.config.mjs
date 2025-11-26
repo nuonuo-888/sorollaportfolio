@@ -8,7 +8,7 @@ import edgeoneAdapter from "@edgeone/astro";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://sorollaportfolio.edgeone.app",
+  site: "https://sorollaportfolio.edgeone.app/",
   output: "static",
   integrations: [mdx(), sitemap(), tailwind(), icon()],
   adapter: edgeoneAdapter()
